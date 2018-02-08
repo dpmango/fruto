@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="39px" viewBox="0 0 40 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/arrow-right/orange</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.58639348,0.000220497411 C9.02934763,0.00685781972 9.40655225,0.168429208 9.71743727,0.484745026 L15.5446312,6.45966257 C15.8517156,6.77616802 16.0035476,7.15335757 15.9999371,7.59047265 C15.9972767,8.02720846 15.840314,8.40193271 15.5286689,8.71426614 L9.70071485,14.5298879 C9.38678939,14.8431696 9.00749446,15 8.56283006,15 C8.11854572,15 7.73925079,14.8431696 7.42532533,14.5298879 C7.11101981,14.2162271 6.95405708,13.83771 6.95367703,13.3941473 C6.95405708,12.9507741 7.11101981,12.5722571 7.42532533,12.2587859 L10.5054814,9.18494711 L1.60953309,9.18494711 C1.1648687,9.18456783 0.785763794,9.02792703 0.471458276,8.71426614 C0.157152759,8.40079489 0,8.02227788 0,7.57871511 C0,7.13534198 0.157152759,6.75682497 0.471458276,6.44316408 C0.785763794,6.12988247 1.1648687,5.97286239 1.60953309,5.97286239 L10.5757916,5.97286239 L7.40898297,2.72303975 C7.09980819,2.40236226 6.94892634,2.02175923 6.95614739,1.58066176 C6.96241829,1.13899537 7.12508185,0.763702201 7.443758,0.454402981 C7.76338429,0.145103762 8.14419944,-0.00660646268 8.58639348,0.000220497411 Z" id="path-1"></path>
+        <filter x="-137.5%" y="-113.3%" width="375.0%" height="393.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.411764706   0 0 0 0 0.0431372549  0 0 0 0.75 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="1--01-diary-calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-264.000000, -544.000000)">
+        <g id="статьи" transform="translate(12.000000, 527.000000)" fill-rule="nonzero">
+            <g id="icon/arrow-right/orange" transform="translate(264.000000, 24.000000)">
+                <g>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#EB690B" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,41 @@
+---
+title: Homepage title
+bodyClass: homepage
+---
+extends shared/_layout
+block content
+  button.btn.btn--orange #[span Поменять везде в меню]
+  button.btn.btn--white #[span Отменить]
+  button.btn.btn--orange.btn--icon
+    +icon('ico-book')
+    span Статьи и советы
+  button.btn.btn--white.btn--twoIcons
+    .btnIcon
+      +icon('ico-book')
+    span Статьи и советы
+    +icon('ico-arrow-right')
+
+  .card
+    .card__av.card__av--img
+      img(src='img/fruto.png')
+    .card__desc
+      p.text Пюре из цветной капусты гипоаллергенное
+      a.link(href='#') О продукте
+    button.card__refresh
+      +icon('ico-replace')
+      
+  .card
+    .card__av.card__av--icon
+      +icon('ico-cheese')
+    .card__desc
+      p.text Молоко или молочная смесь
+    button.card__refresh
+      +icon('ico-replace')
+
+  div.input-wrp
+    input.ui-input(placeholder='Название продукта')
+  div.input-wrp
+    input.ui-input(value='Название продукта')
+  div.input-wrp
+    input.ui-input.ui-input--err(value='Название продукта')
+    span.input-wrp__err Сообщение об ужасной ошибке
