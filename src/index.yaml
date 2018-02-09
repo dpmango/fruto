@@ -1,7 +1,15 @@
 ProjectTitle: Fruto UI
 
 PageList:
-- file: homepage.html
+- file: menu.html
   ready: 100
-- file: page.html
-  ready: 0
+- file: menu-edit.html
+  ready: 100
+- file: catalog.html
+  ready: 100
+- file: catalog-change.html
+  ready: 100
+- file: product-page1.html
+  ready: 10
+- file: components.html
+  ready: 100
