@@ -1,0 +1,84 @@
+---
+title: Homepage title
+bodyClass: page
+---
+extends shared/_layout
+block header
+  .prev
+    +icon('ico-prev')
+    p.prev__page Каталог продуктов
+block content
+  .content.content--mm
+    .container
+      .input-wrp
+        input.ui-input(placeholder='Поиск продукта по названию')
+        +icon('ico-search')
+        
+    .container-fluid
+      .catalog
+        h2.heading.heading--type1.heading--big Продукты &#171;Фрутоняня&#187;
+        .catalog__el
+          .card
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+              .dislike
+                +icon('ico-dislike')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+              a.link(href='#') О продукте
+            button.card__refresh
+              +icon('ico-add')
+          .card
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+              .like
+                +icon('ico-like')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+              a.link(href='#') О продукте
+            button.card__refresh
+              +icon('ico-add')
+          .card
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+              a.link(href='#') О продукте
+            button.card__refresh
+              +icon('ico-add')
+          .card
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+              a.link(href='#') О продукте
+            button.card__refresh
+              +icon('ico-add')
+          .card
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+              a.link(href='#') О продукте
+            button.card__refresh
+              +icon('ico-add')
+          .card
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+              a.link(href='#') О продукте
+            button.card__refresh
+              +icon('ico-add')
+              
+      .catalog
+        h2.heading.heading--type1.heading--big Продукты первого прикорма
+        .catalog__el
+          .card
+            .card__av.card__av--icon
+              .icon-milk
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+              a.link(href='#') О продукте
+            button.card__refresh
+              +icon('ico-add')

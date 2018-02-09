@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="21px" viewBox="0 0 13 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/back/white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="topbar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-15.000000, -39.000000)">
+        <g fill="#FFFFFF" id="icon/back/white">
+            <g transform="translate(15.000000, 39.000000)">
+                <path d="M9.75946154,0.412269231 L0.395653846,9.40223077 C-0.131884615,9.90796154 -0.131884615,10.7522308 0.395653846,11.2600385 L9.75946154,20.2479231 C10.3337308,20.7993462 11.2403077,20.7993462 11.8145769,20.2479231 C12.4220769,19.6643077 12.4220769,18.6923077 11.8145769,18.1076538 L3.97211538,10.5788077 C3.82984615,10.4427692 3.82984615,10.2174231 3.97211538,10.0813846 L11.8145769,2.55253846 C12.4220769,1.96892308 12.4220769,0.996923077 11.8145769,0.412269231 C11.5269231,0.138115385 11.1572308,0 10.7875385,0 C10.4168077,0 10.0471154,0.138115385 9.75946154,0.412269231 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

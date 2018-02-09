@@ -1,1 +1,21 @@
 // FOOTER
+.footer-one
+  display: flex
+  justify-content: center
+  height: 49px
+  margin-top: 39px
+  background-color: $colorOrange
+
+  &__btn
+    max-width: calc(320px / 3)
+    width: calc(320px / 3)
+    font-family: 'ArialRoundedMTProCyr'
+    color: #fff
+    opacity: .5
+    transition: .3s
+
+    &--active
+      opacity: 1
+
+    p
+      font-size: .625rem

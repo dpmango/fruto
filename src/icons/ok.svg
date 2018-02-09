@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ok</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="4--01-today" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-113.000000, -96.000000)">
+        <g id="ребенок-1" transform="translate(16.000000, 88.000000)" fill="#008BD0">
+            <g id="icon/ok" transform="translate(97.000000, 8.000000)">
+                <g id="Shape">
+                    <path d="M5,0 C2.23875,0 0,2.23875 0,5 C0,7.76125 2.23875,10 5,10 C7.76125,10 10,7.76125 10,5 C10,2.23875 7.76125,0 5,0 Z M7.79458333,4.04458333 L4.64458333,7.19458333 C4.56625,7.27291667 4.46041667,7.31666667 4.35,7.31666667 C4.23958333,7.31666667 4.13333333,7.27291667 4.05541667,7.19458333 L2.61666667,5.75583333 C2.45375,5.59291667 2.45375,5.32958333 2.61666667,5.16666667 C2.77958333,5.00375 3.04291667,5.00375 3.20583333,5.16666667 L4.35,6.31083333 L7.20541667,3.45541667 C7.36833333,3.2925 7.63166667,3.2925 7.79458333,3.45541667 C7.9575,3.61833333 7.9575,3.88166667 7.79458333,4.04458333 Z" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

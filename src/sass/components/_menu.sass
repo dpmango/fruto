@@ -1,0 +1,32 @@
+.menu
+  &:not(:last-of-type)
+    margin-bottom: 30px
+
+  &__heading
+    font-family: 'KiddyKitty-Bold'
+    font-size: 1rem
+    color: $colorOrange
+    margin-left: 16px
+    margin-bottom: 8px
+
+    +rmin($tablet)
+      margin-left: 0
+
+  &__meal
+    &:not(:last-of-type)
+      margin-bottom: 20px
+
+  .btn--twoIcons
+    padding-left: 18px
+    border-radius: 0
+
+    .btnIcon
+      margin-right: 20px
+      font-size: 1.35rem
+
+    span
+      font-family: 'ArialRoundedMTProCyr'
+      font-size: .8125rem
+
+    &:after
+      border-radius: 0

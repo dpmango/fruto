@@ -1,0 +1,184 @@
+---
+title: Menu edit
+bodyClass: page
+---
+extends shared/_layout
+block header
+  .prev
+    +icon('ico-prev')
+    p.prev__page Меню
+block content
+  .content.content--mm
+    // children
+    .container
+      .children
+        .child.child--active
+          .child__av
+            img(src='img/child-1.png')
+          .child__info
+            p.child__name
+              span Миша
+              +icon('ico-ok')
+            p.text 5 месяцев
+        .child
+          .child__av
+            img(src='img/child-2.png')
+          .child__info
+            p.child__name
+              span Александра
+              +icon('ico-ok')
+            p.text.text--gray 4 года 7 месяцев
+
+      
+    .container-fluid
+      // menu
+      .menu
+        .edit
+          h2.heading.heading--type1.heading--big 1 Февраля (сегодня)
+          button.edit__btn
+            +icon('ico-save')
+            
+        // menu__meal element
+        .menu__meal
+          h3.menu__heading Завтрак
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          button.btn.btn--white.btn--twoIcons
+            .btnIcon
+              +icon('ico-add')
+            span Добавить продукт
+            
+        // menu__meal element
+        .menu__meal
+          h3.menu__heading Обед
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          button.btn.btn--white.btn--twoIcons
+            .btnIcon
+              +icon('ico-add')
+            span Добавить продукт
+              
+        // menu__meal element
+        .menu__meal
+          h3.menu__heading Полдник
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          button.btn.btn--white.btn--twoIcons
+            .btnIcon
+              +icon('ico-add')
+            span Добавить продукт
+              
+        // menu__meal element
+        .menu__meal
+          h3.menu__heading Ужин
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          button.btn.btn--white.btn--twoIcons
+            .btnIcon
+              +icon('ico-add')
+            span Добавить продукт
+              
+      // menu
+      .menu
+        .edit
+          h2.heading.heading--type1.heading--big 2 Февраля
+          button.edit__btn
+            +icon('ico-save')
+            
+        // menu__meal element
+        .menu__meal
+          h3.menu__heading Завтрак
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          button.btn.btn--white.btn--twoIcons
+            .btnIcon
+              +icon('ico-add')
+            span Добавить продукт
+            
+        // menu__meal element
+        .menu__meal
+          h3.menu__heading Обед
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          button.btn.btn--white.btn--twoIcons
+            .btnIcon
+              +icon('ico-add')
+            span Добавить продукт
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          button.btn.btn--white.btn--twoIcons
+            .btnIcon
+              +icon('ico-add')
+            span Добавить продукт
+              
+        // menu__meal element
+        .menu__meal
+          h3.menu__heading Полдник
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          button.btn.btn--white.btn--twoIcons
+            .btnIcon
+              +icon('ico-add')
+            span Добавить продукт
+              
+        // menu__meal element
+        .menu__meal
+          h3.menu__heading Ужин
+          .card.menu__el
+            .card__av.card__av--img
+              img(src='img/fruto.png')
+            .card__desc
+              p.text Пюре из цветной капусты гипоаллергенное
+            button.card__refresh
+              +icon('ico-replace')
+          button.btn.btn--white.btn--twoIcons
+            .btnIcon
+              +icon('ico-add')
+            span Добавить продукт

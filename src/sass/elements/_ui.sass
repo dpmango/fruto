@@ -15,6 +15,19 @@
     font-size: .555rem
     color: $colorRed
 
+  .ico-search
+    position: absolute
+    left: 55px
+    top: 50%
+    transform: translateY(-50%)
+    font-size: 1.2rem
+    color: $grayColor
+    transition: .3s
+
+  input:focus + .ico-search
+    opacity: 0
+    visibility: hidden
+
 .ui-input
   display: block
   width: 100%
@@ -39,63 +52,85 @@
 
 
 // Checkbox
-.ui-checkbox
-  input
-    display: none
-    width: 0.1px
-    height: 0.1px
-    opacity: 0
-    position: absolute
-    top: 0
-    left: 0
-    &:checked
-      + label
-        &::before
-          border-color: $colorGreen
-        &::after
-          transform: translateY(-50%) scale(1)
-  label
-    display: block
-    width: 100%
-    position: relative
-    cursor: pointer
-    &::before
-      position: absolute
-      left: 0
-      top: 50%
-      transform: translateY(-50%)
-      display: inline-block
-      content: ' '
-      size: 20px
-      background-color: white
-      border: 1px solid #AFB7C0
-      border-radius: 4px
-      cursor: pointer
-      vertical-align: middle
-      cursor: pointer
-      transition: all $transitionSpeed ease-in-out
-    &::after
-      position: absolute
-      left: 1px
-      top: 50%
-      transform: translateY(-50%) scale(0)
-      display: inline-block
-      content: ' '
-      size: 20px
-      background-image: svg-load('../../images/svg/checkbox.svg')
-      background-repeat: no-repeat
-      background-position: center
-      transition: transform .2s ease
-    span
-      display: inline-block
-      padding-left: 35px
-      vertical-align: top
-      line-height: 1.3
-      font-size: 14px
-      cursor: pointer
+// .ui-checkbox
+//   input
+//     display: none
+//     width: 0.1px
+//     height: 0.1px
+//     opacity: 0
+//     position: absolute
+//     top: 0
+//     left: 0
+//     &:checked
+//       + label
+//         &::before
+//           border-color: $colorGreen
+//         &::after
+//           transform: translateY(-50%) scale(1)
+//   label
+//     display: block
+//     width: 100%
+//     position: relative
+//     cursor: pointer
+//     &::before
+//       position: absolute
+//       left: 0
+//       top: 50%
+//       transform: translateY(-50%)
+//       display: inline-block
+//       content: ' '
+//       size: 20px
+//       background-color: white
+//       border: 1px solid #AFB7C0
+//       border-radius: 4px
+//       cursor: pointer
+//       vertical-align: middle
+//       cursor: pointer
+//       transition: all $transitionSpeed ease-in-out
+//     &::after
+//       position: absolute
+//       left: 1px
+//       top: 50%
+//       transform: translateY(-50%) scale(0)
+//       display: inline-block
+//       content: ' '
+//       size: 20px
+//       background-image: svg-load('../../images/svg/checkbox.svg')
+//       background-repeat: no-repeat
+//       background-position: center
+//       transition: transform .2s ease
+//     span
+//       display: inline-block
+//       padding-left: 35px
+//       vertical-align: top
+//       line-height: 1.3
+//       font-size: 14px
+//       cursor: pointer
 
 .text
   font-size: .8125rem
+
+  &--small
+    font-size: .6875rem
+
+  &--gray
+    color: $grayColor
+
+.heading
+  font-weight: 700
+  line-height: 1.3
+
+  &--type1
+    font-family: 'ArialRoundedMTProCyr'
+
+  &--type2
+    font-family: 'KiddyKitty-Bold'
+
+  &--big
+    font-size: 1.125rem
+
+  &--avg
+    font-size: 1rem
 
 .link
   font-size: .625rem

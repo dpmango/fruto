@@ -40,12 +40,127 @@ body, html
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   color: $fontColor
-  // background-image: linear-gradient($colorBgYellow, $colorBgPurple)
+  // background-image: linear-gradient($colorLightYellow, $colorLightPurple)
   background-color: #f8f8f8
 
 button
   font-family: 'KiddyKitty-Bold', sans-serif, Tahoma
+  background-color: transparent
 
-.page
-  width: 100%
-  padding: 50px 12px
+.container
+  padding: 0 12px
+
+  +rmin($tablet)
+    max-width: 608px
+    margin: 0 auto
+    padding: 0
+
+  &-fluid
+    padding: 0
+
+    +rmin($tablet)
+      max-width: 608px
+      margin: 0 auto
+
+.content
+  // small margin
+  &--sm
+    margin-top: 8px
+  // medium margin
+  &--mm
+    margin-top: 16px
+
+  &--sm,
+  &--mm
+    +rmin($tablet)
+      margin-top: 24px
+
+
+.children
+  display: flex
+  justify-content: center
+  margin-bottom: 30px
+
+.child
+  display: flex
+  align-items: center
+  opacity: .5
+  &:not(:last-of-type)
+    margin-right: 15px
+
+  &__av
+    width: 42px
+    height: 42px
+    margin-right: 8px
+    border-radius: 16px
+
+  &__name
+    color: $colorOrange
+    margin-bottom: 3px
+
+    span
+      display: inline-block
+      vertical-align: middle
+
+    .ico-ok
+      display: none
+
+  &--active
+    opacity: 1
+    .child__av
+      position: relative
+
+      &:after
+        box-sizing: border-box
+        position: absolute
+        left: 50%
+        top: 50%
+        content: ''
+        width: 44px
+        height: 44px
+        margin-top: -22px
+        margin-left: -22px
+        border-radius: 16px
+        border: 3px solid $colorBlue
+        box-shadow: 0 5px 13px 0 fade-out($colorBlue, .25)
+
+    .child__name
+      color: $colorBlue
+
+      .ico-ok
+        display: inline-block
+        vertical-align: middle
+
+.edit
+  display: flex
+  justify-content: space-between
+  margin-bottom: 5px
+  padding: 0 16px
+
+  &__btn
+    color: $colorOrange
+
+  +rmin($tablet)
+    padding: 0
+
+.dislike,
+.like
+  position: absolute
+  top: -2px
+  right: -2px
+  width: 16px
+  height: 16px
+  border-radius: 50%
+  color: #fff
+
+  .ico
+    +vcenter
+    font-size: .69rem
+
+.dislike
+  background-color: $colorBlue
+  box-shadow: 0 1px 2px 0 fade-out($colorBlue, .65)
+
+.like
+  background-color: $colorOrange
+  box-shadow: 0 1px 2px 0 fade-out($colorOrange, .65)

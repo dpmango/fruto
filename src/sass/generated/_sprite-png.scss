@@ -1,11 +1,182 @@
 $sprite: (
-	logo: (
+	beans: (
+		offset-x: -130px,
+		offset-y: 0px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	bread: (
+		offset-x: -390px,
+		offset-y: -130px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	butter: (
+		offset-x: 0px,
+		offset-y: -130px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	carrot: (
+		offset-x: -130px,
+		offset-y: -130px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	cheese: (
+		offset-x: -260px,
+		offset-y: 0px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	cookie: (
+		offset-x: -260px,
+		offset-y: -130px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	cracker: (
+		offset-x: 0px,
+		offset-y: -260px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	cucumber: (
+		offset-x: -130px,
+		offset-y: -260px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	fish: (
+		offset-x: -260px,
+		offset-y: -260px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	kefir: (
+		offset-x: -390px,
+		offset-y: 0px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	meat: (
 		offset-x: 0px,
 		offset-y: 0px,
-		width: 300px,
-		height: 70px,
-		total-width: 300px,
-		total-height: 70px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	milk: (
+		offset-x: -390px,
+		offset-y: -260px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	oil: (
+		offset-x: 0px,
+		offset-y: -390px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	porrige: (
+		offset-x: -130px,
+		offset-y: -390px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	potato: (
+		offset-x: -260px,
+		offset-y: -390px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	products: (
+		offset-x: -390px,
+		offset-y: -390px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	pumpkin: (
+		offset-x: -520px,
+		offset-y: 0px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	soup: (
+		offset-x: -520px,
+		offset-y: -130px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	tomato: (
+		offset-x: -520px,
+		offset-y: -260px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
+		image: '../img/sprite.png'
+	),
+	yolk: (
+		offset-x: -520px,
+		offset-y: -390px,
+		width: 120px,
+		height: 120px,
+		total-width: 640px,
+		total-height: 510px,
 		image: '../img/sprite.png'
 	),
 );
@@ -64,6 +235,63 @@ $sprite: (
 
 
 
-	.icon-logo {
-		@include sprite(logo)
+	.icon-beans {
+		@include sprite(beans)
+	}
+	.icon-bread {
+		@include sprite(bread)
+	}
+	.icon-butter {
+		@include sprite(butter)
+	}
+	.icon-carrot {
+		@include sprite(carrot)
+	}
+	.icon-cheese {
+		@include sprite(cheese)
+	}
+	.icon-cookie {
+		@include sprite(cookie)
+	}
+	.icon-cracker {
+		@include sprite(cracker)
+	}
+	.icon-cucumber {
+		@include sprite(cucumber)
+	}
+	.icon-fish {
+		@include sprite(fish)
+	}
+	.icon-kefir {
+		@include sprite(kefir)
+	}
+	.icon-meat {
+		@include sprite(meat)
+	}
+	.icon-milk {
+		@include sprite(milk)
+	}
+	.icon-oil {
+		@include sprite(oil)
+	}
+	.icon-porrige {
+		@include sprite(porrige)
+	}
+	.icon-potato {
+		@include sprite(potato)
+	}
+	.icon-products {
+		@include sprite(products)
+	}
+	.icon-pumpkin {
+		@include sprite(pumpkin)
+	}
+	.icon-soup {
+		@include sprite(soup)
+	}
+	.icon-tomato {
+		@include sprite(tomato)
+	}
+	.icon-yolk {
+		@include sprite(yolk)
 	}

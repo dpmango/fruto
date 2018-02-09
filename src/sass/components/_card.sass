@@ -3,13 +3,11 @@
   align-items: center
   height: 88px
   padding-left: 8px
-  margin-left: -12px
-  margin-right: -12px
-  margin-bottom: 20px
   background-image: linear-gradient(#fff, fade-out($colorBlue, .95))
   box-shadow: 0 2px 6px 0 fade-out($colorBlue, .8)
 
   &__av
+    position: relative
     min-width: 64px
     width: 64px
     height: 64px
@@ -28,22 +26,13 @@
     &--icon
       position: relative
 
-      &:after
+      .icon-milk
         position: absolute
-        content: ''
-        left: 0
-        top: 0
-        width: 100%
-        height: 100%
-        border-radius: 27px
-        background-image: linear-gradient(fade-out($colorBlue, .95), #fff)
-        box-shadow: inset 0 -2px 6px 0 fade-out($colorBlue, .8)
-
-      svg
-        +vcenter
-        z-index: 1
-        font-size: 2rem
-        color: $colorOrange
+        left: 50%
+        top: 50%
+        margin-left: -60px
+        margin-top: -60px
+        transform: scale(.5)
 
   &__refresh
     position: relative
@@ -81,3 +70,16 @@
       &:after
         opacity: 1
         box-shadow: inset 2px -4px 6px 0 fade-out($colorBlue, .8)
+
+  &__volume
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 80px
+    min-width: 80px
+    height: 100%
+    margin-left: auto
+    border-left: 1px solid fade-out($colorBlue, .8)
+    font-weight: 700
+    font-size: .8125rem
+    color: $colorBlue

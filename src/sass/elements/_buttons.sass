@@ -20,9 +20,6 @@ button
   &:not(:last-of-type)
     margin-bottom: 20px
 
-  &:last-of-type
-    margin-bottom: 50px
-
   &:after
     position: absolute
     content: ''
@@ -40,7 +37,7 @@ button
 
   &--white
     background-color: #fff
-    background-image: linear-gradient(#fff, fade-out($colorBlue, .95))
+    background-image: linear-gradient(to bottom, #fff, fade-out($colorBlue, .95))
     box-shadow: 0 3px 13px 0 fade-out($colorBlue, .8)
 
     &:after
