@@ -15,5 +15,13 @@ PageList:
   ready: 100
 - file: product-page3.html
   ready: 100
+- file: feed1.html
+  ready: 100
+- file: feed2.html
+  ready: 100
+- file: article1.html
+  ready: 100
+- file: article2.html
+  ready: 80
 - file: components.html
   ready: 100
