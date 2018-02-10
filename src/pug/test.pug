@@ -1,0 +1,136 @@
+---
+title: Menu
+bodyClass: page
+---
+extends shared/_layout
+block header
+  .prev
+    +icon('ico-prev')
+    p.prev__page Меню
+block content
+  .content.content--mm
+    // children
+    .container
+      .children
+        .child.child--active
+          .child__av
+            img(src='img/child-1.png')
+          .child__info
+            p.child__name
+              span Миша
+              +icon('ico-ok')
+            p.text 5 месяцев
+        .child
+          .child__av
+            img(src='img/child-2.png')
+          .child__info
+            p.child__name
+              span Александра
+              +icon('ico-ok')
+            p.text.text--gray 4 года 7 месяцев
+
+      .test
+        .test__el
+          h3.heading.heading--type1.heading--avg Малыш родился в срок?
+          .radio
+            input(type='radio' name='gruop-1' id='radio-1')
+            label(for='radio-1')
+              .icon
+                +icon('ico-ok')
+              span Да
+          .radio
+            input(type='radio' name='gruop-1' id='radio-2')
+            label(for='radio-2')
+              .icon
+                +icon('ico-ok')
+              span Нет
+          p.small-text В случае рождения ребёнка раньше срока только педиатр может решать, что и как делать маме в плане прикорма. Почитать теоретическую часть по существующим схемам прикорма вы можете в нашем разделе «Статьи»
+          .article-links
+            a.article-link(href='#')
+              span Когда начинать прикорм?
+              +icon('ico-ar')
+            a.article-link(href='#')
+              span На что обратить внимание при введении прикорма
+              +icon('ico-ar')
+              
+        .test__el
+          h3.heading.heading--type1.heading--avg Рост и вес соответствуют возрасту?
+          .radio
+            input(type='radio' name='gruop-2' id='radio-3')
+            label(for='radio-3')
+              .icon
+                +icon('ico-ok')
+              span Да
+          .radio
+            input(type='radio' name='gruop-2' id='radio-4')
+            label(for='radio-4')
+              .icon
+                +icon('ico-ok')
+              span Нет
+          p.small-text Для проверки этого параметра воспользуйтесь таблицами ВОЗ
+          a.article-link(href='#')
+            span Таблицы рекомендаций ВОЗ
+            +icon('ico-ar')
+            
+        .test__el
+          h3.heading.heading--type1.heading--avg Стул регулярный?
+          .radio
+            input(type='radio' name='gruop-3' id='radio-5')
+            label(for='radio-5')
+              .icon
+                +icon('ico-ok')
+              span Да
+          .radio
+            input(type='radio' name='gruop-3' id='radio-6')
+            label(for='radio-6')
+              .icon
+                +icon('ico-ok')
+              span Нет
+          p.small-text Особенности работы ЖКТ малыша играют роль при выборе прикорма. Если у малыша учащенный стул – начинать рекомендовано с каш. Если есть склонность к запорам – с овощного пюре. Подробнее о том, с чего начинать прикорм – в статье
+          a.article-link(href='#')
+            span С чего начинать вводить прикорм
+            +icon('ico-ar')
+            
+        .test__el
+          h3.heading.heading--type1.heading--avg Малыш интересуется едой?
+          .radio
+            input(type='radio' name='gruop-4' id='radio-7')
+            label(for='radio-7')
+              .icon
+                +icon('ico-ok')
+              span Да
+          .radio
+            input(type='radio' name='gruop-4' id='radio-8')
+            label(for='radio-8')
+              .icon
+                +icon('ico-ok')
+              span Нет
+          p.small-text Без желания малыша попробовать новую для него пищу введение прикорма будет проходить сложнее. Если малыша пока не интересует продукта на «взрослом» столе, возможно, стоит немного подождать.
+          a.article-link(href='#')
+            span Как понять, что ребёнок готов к прикорму
+            +icon('ico-ar')
+            
+        .test__el
+          h3.heading.heading--type1.heading--avg Есть ли выталкивающий рефлекс? 
+          .radio
+            input(type='radio' name='gruop-5' id='radio-9')
+            label(for='radio-9')
+              .icon
+                +icon('ico-ok')
+              span Да
+          .radio
+            input(type='radio' name='gruop-5' id='radio-10')
+            label(for='radio-10')
+              .icon
+                +icon('ico-ok')
+              span Нет
+          p.small-text Интервал от 4 до 6 месяцев называют «критическим окном» для начала прикорма. В этот период угасает «рефлекс выталкивания ложки», а значит, малыш приобретает способность проглотить полужидкую или более густую пищу.
+          a.article-link(href='#')
+            span Что нужно для ввода прикорма
+            +icon('ico-ar')
+            
+      button.btn.btn--white.btn--twoIcons
+        .btnIcon
+          +icon('ico-save')
+        span.heading.heading--type1.heading--avg Результаты теста
+        +icon('ico-arrow-right')

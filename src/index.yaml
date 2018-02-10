@@ -22,6 +22,10 @@ PageList:
 - file: article1.html
   ready: 100
 - file: article2.html
-  ready: 80
+  ready: 100
+- file: test.html
+  ready: 100
+- file: daily.html
+  ready: 10
 - file: components.html
   ready: 100
