@@ -1,0 +1,33 @@
+.history
+  margin-top: 25px
+  .history__el
+    display: flex
+    align-items: center
+
+    &:not(:last-of-type)
+      margin-bottom: 10px
+
+    &--like
+      justify-content: flex-end
+
+      span
+        margin-right: 8px
+        color: $colorOrange
+
+    &--dislike
+      justify-content: flex-start
+
+      span
+        margin-left: 8px
+        color: $colorBlue
+
+    .like,
+    .dislike
+      position: relative
+
+      .ico
+        font-size: .5rem
+
+    span
+      margin-top: 5px
+      font-size: .6875rem

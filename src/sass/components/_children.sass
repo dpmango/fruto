@@ -1,0 +1,54 @@
+.children
+  display: flex
+  justify-content: center
+  margin-bottom: 30px
+
+.child
+  display: flex
+  align-items: center
+  opacity: .5
+  &:not(:last-of-type)
+    margin-right: 15px
+
+  &__av
+    width: 42px
+    height: 42px
+    margin-right: 8px
+    border-radius: 16px
+
+  &__name
+    color: $colorOrange
+    margin-bottom: 3px
+
+    span
+      display: inline-block
+      vertical-align: middle
+
+    .ico-ok
+      display: none
+
+  &--active
+    opacity: 1
+    .child__av
+      position: relative
+
+      &:after
+        box-sizing: border-box
+        position: absolute
+        left: 50%
+        top: 50%
+        content: ''
+        width: 44px
+        height: 44px
+        margin-top: -22px
+        margin-left: -22px
+        border-radius: 16px
+        border: 3px solid $colorBlue
+        box-shadow: 0 5px 13px 0 fade-out($colorBlue, .25)
+
+    .child__name
+      color: $colorBlue
+
+      .ico-ok
+        display: inline-block
+        vertical-align: middle
