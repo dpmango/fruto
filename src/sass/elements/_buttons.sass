@@ -7,6 +7,14 @@ button
   &:focus
     outline: none
 
+.btn-group
+  +rmin($tablet)
+    display: flex
+
+    .btn
+      &:not(:last-of-type)
+        margin-right: 16px
+
 .btn
   position: relative
   width: 100%
@@ -101,7 +109,7 @@ button
         transform: scale(.35)
 
     span
-      max-width: 180px
+      // max-width: 180px
       margin-top: 5px
       text-align: left
 

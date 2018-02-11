@@ -6,7 +6,7 @@ extends shared/_layout
 block header
   .prev
     +icon('ico-prev')
-    p.prev__page Меню
+    p.prev__page Ежедневная прикорма
 block content
   .content.content--mm
     // children
@@ -30,3 +30,21 @@ block content
             p.text.text--gray 4 года 7 месяцев
 
     .datepicker-here
+    .container
+      .btn-group
+        button.btn.btn--white.btn--twoIcons
+          .btnIcon
+            +icon('ico-sun')
+          span Дневник прикорма
+          +icon('ico-arrow-right')
+
+        button.btn.btn--white.btn--twoIcons
+          .btnIcon
+            +icon('ico-book')
+          span Статьи и советы
+          +icon('ico-arrow-right')
+          
+    .container.daily-small-text
+      .small-text
+        p Прикорм не рекомендуется вводить на фоне прорезывания зубов и в период вакцинации
+        p Представленная информация носит справочный характер и не может заменить визит к вашему лечащему врачу.

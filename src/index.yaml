@@ -26,6 +26,6 @@ PageList:
 - file: test.html
   ready: 100
 - file: daily.html
-  ready: 10
+  ready: 100
 - file: components.html
   ready: 100
