@@ -12,40 +12,31 @@ block content
     // children
     .container
       .children
-        .children-group
-          .child
-            .child__av
-              img(src='img/child-1.png')
-            .child__info
-              p.child__name
-                span Миша
-                +icon('ico-ok')
-              p.text 5 месяцев
-          .child
-            .child__av
-              img(src='img/child-2.png')
-            .child__info
-              p.child__name
-                span Александра
-                +icon('ico-ok')
-              p.text.text--gray 4 года 7 месяцев
-        .children-group
-          .child.child--active
-            .child__av
-              img(src='img/child-1.png')
-            .child__info
-              p.child__name
-                span Миша
-                +icon('ico-ok')
-              p.text 5 месяцев
-          .child
-            .child__av
-              img(src='img/child-2.png')
-            .child__info
-              p.child__name
-                span Александра
-                +icon('ico-ok')
-              p.text.text--gray 4 года 7 месяцев
+        .child.child--active
+          .child__av
+            img(src='img/child-1.png')
+          .child__info
+            p.child__name
+              span Миша
+              +icon('ico-ok')
+            p.text 5 месяцев
+        .child
+          .child__av
+            img(src='img/child-2.png')
+          .child__info
+            p.child__name
+              span Александра
+              +icon('ico-ok')
+            p.text.text--gray 4 года 7 месяцев
+        .child
+          .child__av
+            img(src='img/child-2.png')
+          .child__info
+            p.child__name
+              span Мария
+              +icon('ico-ok')
+            p.text.text--gray 2 года 3 месяца
+
 
     .datepicker-here
     .container

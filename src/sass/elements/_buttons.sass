@@ -4,6 +4,7 @@ button
   -webkit-apperance: none
   border: 0
   box-shadow: none
+  cursor: pointer
   &:focus
     outline: none
 
@@ -95,9 +96,10 @@ a.btn
     display: flex
     align-items: center
     padding-left: 10px
-    line-height: normal
 
     .btnIcon
+      flex: 0 0 42px
+      align-self: center
       position: relative
       z-index: 1
       min-width: 42px
@@ -120,6 +122,8 @@ a.btn
         transform: scale(.35)
 
     span
+      flex: 1 1 auto
+      align-self: center
       text-align: left
     .fixed-width
       max-width: 180px
@@ -127,5 +131,7 @@ a.btn
         max-width: 100%
 
     .icon-orange
+      flex: 0 0 auto
+      align-self: center
       margin-left: auto
       margin-top: 9px

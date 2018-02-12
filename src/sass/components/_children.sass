@@ -3,26 +3,30 @@
   flex-wrap: wrap
   align-items: flex-start
   justify-content: center
-  margin-bottom: 30px
+  margin-bottom: 15px
+  margin-left: -7px
+  margin-right: -7px
 
-.children-group
-  display: flex
-  justify-content: center
-  &:not(:last-of-type)
-    margin-bottom: 15px
-
-  +rmin($mobile)
-    &:not(:last-of-type)
-      margin-right: 15px
-    &:nth-of-type(n)
-      margin-bottom: 0
+// .children-group
+//   display: flex
+//   justify-content: center
+//   flex-wrap: wrap
+//   &:not(:last-of-type)
+//     margin-bottom: 15px
+//
+//   +rmin($mobile)
+//     &:not(:last-of-type)
+//       margin-right: 15px
+//     &:nth-of-type(n)
+//       margin-bottom: 0
 
 .child
   display: flex
   align-items: center
   opacity: .5
+  padding: 0 7px 15px 7px
   &:not(:last-of-type)
-    margin-right: 15px
+
 
   &__av
     width: 42px
