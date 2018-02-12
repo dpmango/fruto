@@ -31,4 +31,9 @@ $(document).ready(function(){
               </svg>`
   });
 
+  $('a.btn').magnificPopup({
+    removalDelay: 300,
+    mainClass: 'mfp-fade'
+  })
+
 });

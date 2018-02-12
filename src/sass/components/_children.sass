@@ -1,7 +1,21 @@
 .children
   display: flex
+  flex-wrap: wrap
+  align-items: flex-start
   justify-content: center
   margin-bottom: 30px
+
+.children-group
+  display: flex
+  justify-content: center
+  &:not(:last-of-type)
+    margin-bottom: 15px
+
+  +rmin($mobile)
+    &:not(:last-of-type)
+      margin-right: 15px
+    &:nth-of-type(n)
+      margin-bottom: 0
 
 .child
   display: flex

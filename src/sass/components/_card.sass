@@ -3,7 +3,8 @@
   align-items: center
   height: 88px
   padding-left: 8px
-  background-image: linear-gradient(#fff, fade-out($colorBlue, .95))
+  background-color: #fff
+  background-image: linear-gradient(-180deg, rgba(0,139,208,0.00) 0%, rgba(0,139,208,0.05) 98%)
   box-shadow: 0 2px 6px 0 fade-out($colorBlue, .8)
 
   &__av
@@ -40,6 +41,9 @@
         margin-top: -60px
         transform: scale(.35)
 
+  &__desc
+    padding-right: 10px
+
   &__refresh
     position: relative
     height: 100%
@@ -54,8 +58,6 @@
     svg
       position: relative
       z-index: 1
-      margin-top: 5px
-      transition: .3s
 
     &:after
       position: absolute
@@ -64,18 +66,16 @@
       top: 0
       width: 100%
       height: 100%
-      background-image: linear-gradient(fade-out($colorBlue, .95), #fff)
       background-color: #fff
+      background-image: linear-gradient(0deg, rgba(0,139,208,0.00) 2%, rgba(0,139,208,0.05) 100%)
       opacity: 0
       transition: .3s
 
     &:hover
-      svg
-        transform: rotate(180deg)
 
       &:after
         opacity: 1
-        box-shadow: inset 2px -4px 6px 0 fade-out($colorBlue, .8)
+        box-shadow: inset 0 -2px 6px 0 fade-out($colorBlue, .8)
 
   &__volume
     display: flex

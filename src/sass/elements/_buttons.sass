@@ -15,7 +15,12 @@ button
       &:not(:last-of-type)
         margin-right: 16px
 
+a.btn
+  text-align: center
+  font-family: 'KiddyKitty-Bold'
+
 .btn
+  display: block
   position: relative
   width: 100%
   height: 62px
@@ -45,17 +50,20 @@ button
 
   &--white
     background-color: #fff
-    background-image: linear-gradient(to bottom, #fff, fade-out($colorBlue, .95))
+    background-image: linear-gradient(-180deg, rgba(0,139,208,0.00) 0%, rgba(0,139,208,0.05) 98%)
     box-shadow: 0 3px 13px 0 fade-out($colorBlue, .8)
 
     &:after
-      background-image: linear-gradient(fade-out($colorBlue, .95), #fff)
+      background-image: linear-gradient(-1deg, rgba(0,139,208,0.00) 2%, rgba(0,139,208,0.05) 100%)
 
     &:hover
-      box-shadow: 0 3px 13px 0 fade-out($colorBlue, .8), 0 6px 14px 0 fade-out(#000, .8)
+      box-shadow: 0 6px 14px 0 rgba(0,0,0,0.20), 0 3px 13px 0 rgba(0,139,208,0.20)
 
       &:after
         opacity: 1
+
+    &:active
+      color: $fontColor
 
   &--orange
     background-image: linear-gradient($colorOrange, darken($colorOrange, 5%))
@@ -70,6 +78,9 @@ button
 
       &:after
         opacity: 1
+
+    &:active
+      color: #fff
 
   &--icon
 
@@ -89,7 +100,7 @@ button
     .btnIcon
       position: relative
       z-index: 1
-      max-width: 42px
+      min-width: 42px
       width: 42px
       height: 42px
       margin-right: 10px
@@ -109,15 +120,12 @@ button
         transform: scale(.35)
 
     span
-      // max-width: 180px
-      margin-top: 5px
       text-align: left
+    .fixed-width
+      max-width: 180px
+      +rmin($mobile)
+        max-width: 100%
 
-    .ico-arrow-right
-      position: relative
-      z-index: 1
+    .icon-orange
       margin-left: auto
-      margin-top: 10px
-      font-size: 2.3rem
-      color: $colorOrange
-      text-shadow: 5px 13px 0 fade-out($colorOrange, .25)
+      margin-top: 9px

@@ -8,7 +8,7 @@ block header
     +icon('ico-prev')
     p.prev__page Тест «Фрутоняни»
 block content
-  .content.content--mm
+  .content.content--mm.content--noFootBig
     // children
     .container
       .children
@@ -133,4 +133,16 @@ block content
         .btnIcon
           +icon('ico-save')
         span.heading.heading--type1.heading--avg Результаты теста
-        +icon('ico-arrow-right')
+        .icon-orange
+
+block footer
+  footer.footer-one
+    button.footer-one__btn
+      +icon('ico-calendar')
+      p.text Дневник
+    button.footer-one__btn
+      +icon('ico-sun')
+      p.text Сегодня
+    button.footer-one__btn
+      +icon('ico-book')
+      p.text Статьи

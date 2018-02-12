@@ -1,13 +1,21 @@
 ProjectTitle: Fruto UI
 
 PageList:
+- file: daily.html
+  ready: 100
+- file: test.html
+  ready: 100
+- file: feed2.html
+  ready: 100
+- file: feed1.html
+  ready: 100
+- file: article1.html
+  ready: 100
+- file: article2.html
+  ready: 100
 - file: menu.html
   ready: 100
 - file: menu-edit.html
-  ready: 100
-- file: catalog.html
-  ready: 100
-- file: catalog-change.html
   ready: 100
 - file: product-page1.html
   ready: 100
@@ -15,17 +23,9 @@ PageList:
   ready: 100
 - file: product-page3.html
   ready: 100
-- file: feed1.html
+- file: catalog.html
   ready: 100
-- file: feed2.html
+- file: catalog-change.html
   ready: 100
-- file: article1.html
-  ready: 100
-- file: article2.html
-  ready: 100
-- file: test.html
-  ready: 100
-- file: daily.html
-  ready: 100
-- file: components.html
+- file: modals.html
   ready: 100

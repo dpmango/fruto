@@ -1,0 +1,51 @@
+.modal
+  max-width: 296px
+  width: 100%
+  margin: 0 auto
+  padding: 20px 8px 16px
+  border-radius: 11px
+  background-color: #fff
+  background-image: linear-gradient(-180deg, rgba(0,139,208,0.00) 0%, rgba(0,139,208,0.05) 98%)
+  box-shadow: 0 3px 13px fade-out($colorBlue, .8)
+
+  &__img
+    margin-top: 30px
+    margin-bottom: 30px
+    text-align: center
+    img
+      width: 50%
+
+  .heading--type1,
+  .label-avg
+    margin-left: 5px
+
+  .mfp-close
+    display: none
+
+  .heading
+    &--sm
+      margin-bottom: 10px
+
+    &--mm
+      margin-bottom: 24px
+
+  .heading--type2
+    text-align: center
+
+  .text
+    padding: 0 5px
+    line-height: 1.38
+
+    &:not(:last-of-type)
+      margin-bottom: 10px
+
+  .btn-group
+
+    &--sm
+      margin-top: 20px
+
+    &--mm
+      margin-top: 40px
+
+    +rmin($tablet)
+      display: block

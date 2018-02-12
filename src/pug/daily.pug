@@ -8,26 +8,44 @@ block header
     +icon('ico-prev')
     p.prev__page Ежедневная прикорма
 block content
-  .content.content--mm
+  .content.content--mm.content--noFootAvg
     // children
     .container
       .children
-        .child.child--active
-          .child__av
-            img(src='img/child-1.png')
-          .child__info
-            p.child__name
-              span Миша
-              +icon('ico-ok')
-            p.text 5 месяцев
-        .child
-          .child__av
-            img(src='img/child-2.png')
-          .child__info
-            p.child__name
-              span Александра
-              +icon('ico-ok')
-            p.text.text--gray 4 года 7 месяцев
+        .children-group
+          .child
+            .child__av
+              img(src='img/child-1.png')
+            .child__info
+              p.child__name
+                span Миша
+                +icon('ico-ok')
+              p.text 5 месяцев
+          .child
+            .child__av
+              img(src='img/child-2.png')
+            .child__info
+              p.child__name
+                span Александра
+                +icon('ico-ok')
+              p.text.text--gray 4 года 7 месяцев
+        .children-group
+          .child.child--active
+            .child__av
+              img(src='img/child-1.png')
+            .child__info
+              p.child__name
+                span Миша
+                +icon('ico-ok')
+              p.text 5 месяцев
+          .child
+            .child__av
+              img(src='img/child-2.png')
+            .child__info
+              p.child__name
+                span Александра
+                +icon('ico-ok')
+              p.text.text--gray 4 года 7 месяцев
 
     .datepicker-here
     .container
@@ -36,13 +54,13 @@ block content
           .btnIcon
             +icon('ico-sun')
           span Дневник прикорма
-          +icon('ico-arrow-right')
+          .icon-orange
 
         button.btn.btn--white.btn--twoIcons
           .btnIcon
             +icon('ico-book')
           span Статьи и советы
-          +icon('ico-arrow-right')
+          .icon-orange
           
     .container.daily-small-text
       .small-text
