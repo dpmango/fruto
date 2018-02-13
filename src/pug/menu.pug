@@ -12,7 +12,7 @@ block content
     // children
     .container
       .children
-        .child.child--active
+        a.child.child--active(href='#')
           .child__av
             img(src='img/child-1.png')
           .child__info
@@ -20,7 +20,7 @@ block content
               span Миша
               +icon('ico-ok')
             p.text 5 месяцев
-        .child
+        a.child(href='#')
           .child__av
             img(src='img/child-2.png')
           .child__info
@@ -35,7 +35,7 @@ block content
       .menu
         .edit
           h2.heading.heading--type1.heading--big 1 Февраля (сегодня)
-          button.edit__btn
+          a.edit__btn(href='#')
             +icon('ico-edit')
             
         // menu__meal element

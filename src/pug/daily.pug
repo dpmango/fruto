@@ -12,7 +12,7 @@ block content
     // children
     .container
       .children
-        .child.child--active
+        a.child.child--active(href='#')
           .child__av
             img(src='img/child-1.png')
           .child__info
@@ -20,7 +20,7 @@ block content
               span Миша
               +icon('ico-ok')
             p.text 5 месяцев
-        .child
+        a.child(href='#')
           .child__av
             img(src='img/child-2.png')
           .child__info
@@ -28,7 +28,7 @@ block content
               span Александра
               +icon('ico-ok')
             p.text.text--gray 4 года 7 месяцев
-        .child
+        a.child(href='#')
           .child__av
             img(src='img/child-2.png')
           .child__info
@@ -41,13 +41,13 @@ block content
     .datepicker-here
     .container
       .btn-group
-        button.btn.btn--white.btn--twoIcons
+        a.btn.btn--white.btn--twoIcons(href='#')
           .btnIcon
             +icon('ico-sun')
           span Дневник прикорма
           .icon-orange
 
-        button.btn.btn--white.btn--twoIcons
+        a.btn.btn--white.btn--twoIcons(href='#')
           .btnIcon
             +icon('ico-book')
           span Статьи и советы
