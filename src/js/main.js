@@ -40,7 +40,14 @@ $(document).ready(function(){
     inline: true,
     language: 'ru',
     nextHtml: "<svg class='ico ico-ar'><use xlink:href='img/sprite.svg#ico-ar'></use></svg>",
-    prevHtml: "<svg class='ico ico-arl'><use xlink:href='img/sprite.svg#ico-arl'></use></svg>"
+    prevHtml: "<svg class='ico ico-arl'><use xlink:href='img/sprite.svg#ico-arl'></use></svg>",
+    onSelect: function onSelect(formattedDate, date, inst) {
+      var year = date.getFullYear();
+      var month = date.getMonth();
+      var day = date.getDate();
+      var redirectUrl = '/menu/' + day + '-' + month + '-' + year;
+      window.location.href = redirectUrl
+    }
   });
 
   // MODALS
@@ -56,6 +63,34 @@ $(document).ready(function(){
     removalDelay: 300,
     mainClass: 'mfp-fade'
   })
+
+  // SLICK CHILDS
+  $('[js-slider]').slick({
+    mobileFirst: true,
+    dots: false,
+    arrows: false,
+    accessibility: false,
+    adaptiveHeight: false,
+    // centerMode: true,
+    variableWidth: true,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // responsive: [
+    //   {
+    //     breakpoint: 0,
+    //     settings: {
+    //       slidesToShow: 2,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 3,
+    //     }
+    //   },
+    // ]
+  });
 
   function closeMfp(){
     $.magnificPopup.close();
