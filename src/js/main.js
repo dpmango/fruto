@@ -100,6 +100,27 @@ $(document).ready(function(){
     closeMfp();
   })
 
+  // HAMMER.js
+  $('[js-removable]').each(function(i, el){
+    var hammer = new Hammer(el);
+    hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+
+    hammer.on("panleft panright", function(ev){
+      var offset = ev.deltaX / 1.75; //makse transition a bit smaller
+      var targetEl = $(el);
+      var currentOff = targetEl.css('transform')
+      if (offset <= 80){
+        targetEl.css({
+          'transform': 'translate3d('+ offset +'px,0,0)'
+        })
+      } else{
+        return
+      }
+
+    });
+
+  })
+
 
   // MASKED INPUT
   // $("[js-dateMask]").mask("99.99.99",{placeholder:"ДД.ММ.ГГ"});
