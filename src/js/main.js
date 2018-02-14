@@ -153,7 +153,7 @@ $(document).ready(function(){
       $(this).closest('.card').addClass('is-removing');
     })
     .on('click', '.card__removing', function(){
-      $(this).closest('.card').removeClass('is-removing');
+      $(this).closest('.card').removeClass('is-removing').removeClass('is-remove-avail');
     })
 
 
