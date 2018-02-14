@@ -7,7 +7,7 @@
   background-color: #fff
   background-image: linear-gradient(-180deg, rgba(0,139,208,0.00) 0%, rgba(0,139,208,0.05) 98%)
   box-shadow: 0 2px 6px 0 fade-out($colorBlue, .8)
-
+  transition: .25s $ease
   &__av
     position: relative
     min-width: 64px
@@ -47,21 +47,23 @@
 
   &__remove
     position: absolute
-    right: 100vw
+    left: 100vw
     top: 0
     bottom: 0
     height: 100%
     min-width: 80px
     width: 80px
-    display: -webkit-flex
-    display: -ms-flex
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     color: #D0021B
     font-size: 16px
+    cursor: pointer
     background-image: linear-gradient(-1deg, rgba(208,2,27,0.05) 2%, rgba(208,2,27,0.15) 100%)
+    transition: all .25s $ease
+    &:hover
+      box-shadow: inset 0 -2px 6px 0 fade-out(#D0021B, .8)
   &__refresh
     position: relative
     height: 100%
@@ -107,3 +109,38 @@
     font-weight: 700
     font-size: .8125rem
     color: $colorBlue
+
+  &__removing
+    position: relative
+    width: 100%
+    padding-right: 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    display: none
+    color: $colorBlue
+    cursor: pointer
+    span
+      font-size: 12px
+      font-weight: 700
+    .ico
+      position: absolute
+      right: 15px
+      top: 50%
+      transform: translateY(-50%)
+      font-size: 16px
+      // margin-left: auto
+
+
+  &.is-remove-avail
+    transform: translate3d(-80px,0,0)
+  &.is-removing
+    height: auto
+    background: transparent
+    box-shadow: none
+    padding: 20px 0
+    transform: translate3d(0,0,0) !important
+    .card__av, .card__desc, .card__volume, .card__remove
+      display: none
+    .card__removing
+      display: flex

@@ -105,21 +105,57 @@ $(document).ready(function(){
     var hammer = new Hammer(el);
     hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
-    hammer.on("panleft panright", function(ev){
-      var offset = ev.deltaX / 1.75; //makse transition a bit smaller
+    var offsetX = 0;
+    var deltaX = 0;
+
+    hammer.on("panleft panright panend", function(e){
       var targetEl = $(el);
-      var currentOff = targetEl.css('transform')
-      if (offset <= 80){
-        targetEl.css({
-          'transform': 'translate3d('+ offset +'px,0,0)'
-        })
-      } else{
-        return
+      // var movedPos = 0;
+
+      if(e.type === 'panleft') {
+        targetEl.addClass('is-remove-avail')
       }
+
+      if (e.type === "panright"){
+        targetEl.removeClass('is-remove-avail')
+      }
+
+      // if(e.type === 'panleft' || e.type === 'panright') {
+      //   deltaX = e.deltaX;
+      //
+      //   // show
+      //   if ( deltaX < 0 && deltaX >= -80 ){
+      //     offsetX = deltaX
+      //   } else {
+      //     // offsetX = -80 // finnish right move
+      //   }
+      //
+      //   targetEl.css({
+      //     'transform': 'translate3d('+ offsetX +'px,0,0)'
+      //   })
+      // }
+      //
+      // if (e.type === "panend"){
+      //   // offsetX += deltaX;
+      //   deltaX = 0;
+      //
+      //   targetEl.css({
+      //     'transform': 'translate3d('+ offsetX +'px,0,0)'
+      //   })
+      // }
 
     });
 
   })
+
+  _document
+    .on('click', '.card__remove', function(){
+      $(this).closest('.card').addClass('is-removing');
+    })
+    .on('click', '.card__removing', function(){
+      $(this).closest('.card').removeClass('is-removing');
+    })
+
 
 
   // MASKED INPUT
