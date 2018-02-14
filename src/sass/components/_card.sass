@@ -7,7 +7,7 @@
   background-color: #fff
   background-image: linear-gradient(-180deg, rgba(0,139,208,0.00) 0%, rgba(0,139,208,0.05) 98%)
   box-shadow: 0 2px 6px 0 fade-out($colorBlue, .8)
-  transition: .25s $ease
+  transition: transform .25s $ease
   &__av
     position: relative
     min-width: 64px
@@ -47,7 +47,7 @@
 
   &__remove
     position: absolute
-    left: 100vw
+    left: 100%
     top: 0
     bottom: 0
     height: 100%
@@ -113,7 +113,7 @@
   &__removing
     position: relative
     width: 100%
-    padding-right: 15px
+    padding: 20px 15px 20px 0
     display: flex
     align-items: center
     justify-content: center
@@ -138,7 +138,7 @@
     height: auto
     background: transparent
     box-shadow: none
-    padding: 20px 0
+    padding: 0
     transform: translate3d(0,0,0) !important
     .card__av, .card__desc, .card__volume, .card__remove
       display: none
